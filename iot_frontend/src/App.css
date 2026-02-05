@@ -146,6 +146,55 @@
   min-width: 160px;
 }
 
+@media (max-width: 900px) {
+  .dashboard {
+    padding: 20px;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .card-grid,
+  .chart-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .table-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filters {
+    width: 100%;
+  }
+
+  .filter input,
+  .filter select {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard h1 {
+    font-size: 22px;
+  }
+
+  .card h2 {
+    font-size: 20px;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 560px;
+  }
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
